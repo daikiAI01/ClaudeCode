@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Temporary files
+tmp/
+*.tmp
+
+# IDE
+.serena/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*

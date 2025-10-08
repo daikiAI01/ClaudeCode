@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem", "/Users/daikitakayama"],
+      "env": {}
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-memory"],
+      "env": {}
+    },
+    "memory-bank": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-memory"],
+      "env": {}
+    },
+    "codex": {
+      "command": "codex",
+      "args": ["mcp"],
+      "env": {}
+    }
+  }
+}
