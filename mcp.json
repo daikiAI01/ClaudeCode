@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-filesystem", "--root", "/Users/daikitakayama/code"]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-memory-bank"],
+      "env": {
+        "MEMORY_DIR": "/Users/daikitakayama/code/.mcp-memory"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-playwright", "--stdio"]
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-notion"],
+      "env": {
+        "NOTION_TOKEN": "${NOTION_API_KEY}"
+      }
+    },
+    "zapier": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-zapier"],
+      "env": {
+        "ZAPIER_API_KEY": "${ZAPIER_API_KEY}",
+        "ZAPIER_NLA_API_KEY": "${ZAPIER_NLA_API_KEY}"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-sequential-thinking"]
+    },
+    "serena": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-serena"]
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@mcp/server-postgres"],
+      "env": {
+        "DATABASE_URL": "${SUPABASE_DB_URL}"
+      }
+    },
+    "codex": {
+      "command": "codex",
+      "args": ["mcp-server"]
+    }
+  }
+}
+
